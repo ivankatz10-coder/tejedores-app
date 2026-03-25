@@ -4368,7 +4368,6 @@ export default function App(){
   const [dbStatus,setDbStatus]=useState("connecting"); // "connecting"|"ok"|"error"
 
   // Cargar datos de Supabase al iniciar
-  const { useEffect } = window.React || require("react");
   useEffect(()=>{
     async function loadAll() {
       try {
